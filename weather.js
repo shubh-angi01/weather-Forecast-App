@@ -8,6 +8,10 @@ const weathericon = document.querySelector(".weathericon");
 
 async function checkweather(city) {
     const response = await fetch(apiurl + city + `&appid=${apikey}`);
+    if (city.trim() ===""){
+        alert("Enter any city name");
+        return false;
+    }
 
     if (response.status == 404) {
         alert("Enter correct city name");

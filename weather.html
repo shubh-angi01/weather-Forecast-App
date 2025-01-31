@@ -1,99 +1,80 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="style3.css">
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <div class="page">
-        <div class="temperature">
-            <div class="search">
-                <input placeholder="Enter city Name" class="search-bar">
-                <i class="fa-solid fa-magnifying-glass img btn"></i>
+<body class="bg-gray-500 flex justify-center items-center min-h-screen">
+    <div class="flex flex-col md:flex-row h-auto md:h-[30rem] w-full md:w-[70rem]">
+        <div class="temperature bg-white text-black text-center p-6 w-full md:w-1/3 rounded-lg shadow-lg">
+            <div class="search flex items-center justify-between bg-gray-300 rounded-lg p-2">
+                <input type="text" placeholder="Enter city Name" class="search-bar bg-gray-300 border-none text-gray-600 text-lg outline-none">
+                <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer btn"></i>
             </div>
-            <div class="degree">
-                <h5 class="temp">NA</h5>
-                <p class="atmosphere-info">NA</p>
+            <div class="degree mt-16 mb-5">
+                <h5 class="temp text-5xl font-bold">NA</h5>
+                <p class="atmosphere-info text-xl">NA</p>
             </div>
-            <div class="date">
-                <div class="place">
-                    <p class="cityname">NA</p>
-                </div>
+            <div class="date border-t-2 border-gray-500 mx-auto mt-4 pt-4">
+                <p class="cityname text-2xl">NA</p>
             </div>
         </div>
-        <div class="info">
-            <div class="event">
-                <p>Current Weather Conditions</p>
-            </div>
-            <div class="box-1">
-                <div class="wind">
+        <div class="info w-full md:w-2/3 bg-gray-300 text-black p-6 rounded-lg shadow-lg mt-6 md:mt-0 md:ml-4">
+            <p class="text-xl font-bold">Current Weather Conditions</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                <div class="wind bg-blue-600 text-white p-4 text-xl rounded-md ">
                     <p>Wind</p>
-                    <p class="bold wind-info">NA</p>
+                    <p class="bold text-lg font-semibold wind-info">NA</p>
                 </div>
-                <div class="humidity">
+                <div class="humidity bg-blue-600 text-white p-4 rounded-md text-xl">
                     <p>Humidity</p>
-                    <p class="bold humidity-info">NA</p>
+                    <p class="bold text-lg font-semibold humidity-info">NA</p>
                 </div>
-                <div class="real-feel">
+                <div class="real-feel bg-blue-600 text-white p-4 rounded-md text-xl">
                     <p>Real Feel</p>
-                    <p class="bold real-feel-info">NA</p>
+                    <p class="bold text-lg font-semibold real-feel-info">NA</p>
                 </div>
-            </div>
-            <div class="box2">
-                <div class="index">
+                <div class="index bg-blue-600 text-white p-4 rounded-md text-xl">
                     <p>Clouds</p>
-                    <p class="bold cloud-info">NA</p>
-
+                    <p class="bold text-lg font-semibold cloud-info">NA</p>
                 </div>
-                <div class="pressure">
+                <div class="pressure bg-blue-600 text-white p-4 rounded-md text-xl">
                     <p>Pressure</p>
-                    <p class="bold pressure-info">NA</p>
+                    <p class="bold text-lg font-semibold pressure-info">NA</p>
                 </div>
-                <div class="rain">
+                <div class="rain bg-blue-600 text-white p-4 rounded-md text-xl">
                     <p>Atmosphere</p>
-                    <p class="bold atmosphere1-info">NA</p>
+                    <p class="bold text-lg font-semibold atmosphere1-info">NA</p>
                 </div>
-            </div>
-            <div class="box3">
-                <div class="history">
+                <div class="history bg-blue-600 text-white p-4 rounded-md text-xl">
                     <p>Temperature History</p>
-                    <div class="up">
-                        <span><i class="fa-solid fa-up-long" style="color: #FFD43B;"></i></span>
-                        <p class="bold temp-max">NA</p>
+                    <div class="flex items-center mt-2">
+                        <i class="fa-solid fa-up-long text-yellow-400"></i>
+                        <p class="bold text-lg font-semibold temp-max ml-2">NA</p>
                     </div>
-                    <div class="down">
-                        <span><i class="fa-solid fa-down-long" style="color: #63E6BE;"></i></span>
-                        <p class="bold temp-min">NA</p>
+                    <div class="flex items-center mt-2">
+                        <i class="fa-solid fa-down-long text-green-400"></i>
+                        <p class="bold text-lg font-semibold temp-min ml-2">NA</p>
                     </div>
                 </div>
-                <div class="sun">
+                <div class="sun bg-blue-600 text-white p-4 rounded-md text-xl">
                     <p>Sun</p>
-                    <div class="rise">
-                        <p>Rise</p>
-                        <p class="bold sunrise-info">NA</p>
-                    </div>
-                    <div class="set">
-                        <p>Set</p>
-                        <p class="bold sunset-info">NA</p>
-                    </div>
+                    <p class="bold text-lg font-semibold sunrise-info">NA</p>
+                    <p class="bold text-lg font-semibold sunset-info">NA</p>
                 </div>
-                <div class="visibility">
+                <div class="visibility bg-blue-600 text-white p-4 rounded-md text-xl">
                     <p>Visibility</p>
-                    <p class="bold visibility-info">NA</p>
+                    <p class="bold text-lg font-semibold visibility-info">NA</p>
                 </div>
-
             </div>
         </div>
     </div>
-
     <script src="weather.js"></script>
 </body>
-
 </html>
