@@ -1,6 +1,6 @@
 # Weather Forecast App
 
-A simple and user-friendly weather forecast app built using **HTML**, **CSS**, and **JavaScript**. This app provides real-time weather updates for any city, including information like temperature, humidity, wind speed, and more.
+A simple and user-friendly weather forecast app built using **HTML**, **TAILWIND CSS**, and **JAVASCRIPT**. This app provides real-time weather updates for any city, including information like temperature, humidity, wind speed, and more.
 
 ## Features
 
@@ -13,11 +13,10 @@ A simple and user-friendly weather forecast app built using **HTML**, **CSS**, a
 ## Technologies Used
 
 - **HTML**: For structuring the app.
-- **CSS**: For styling the user interface and ensuring responsiveness.
+- **TAILWIND CSS**: For styling the user interface and ensuring responsiveness.
 - **JavaScript**: For fetching weather data from an API and dynamically updating the app.
 
 ## How to Use
 
 1. Clone the repository:
-   ```bash
    git clone https://github.com/your-username/weather-forecast-app.git
