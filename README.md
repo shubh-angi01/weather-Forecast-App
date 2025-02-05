@@ -1,6 +1,6 @@
 # Weather Forecast App
 
-A simple and user-friendly weather forecast app built using **HTML**, **TAILWIND CSS**, and **JAVASCRIPT**. This app provides real-time weather updates for any city, including information like temperature, humidity, wind speed, and more.
+A simple and user-friendly weather forecast app built using **HTML**, **TAILWIND CSS**, and **JavaScript**. This app provides real-time weather updates for any city, including information like temperature, humidity, wind speed, and more.
 
 ## Features
 
